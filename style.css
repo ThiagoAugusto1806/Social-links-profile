@@ -5,37 +5,17 @@ body{
     justify-content: center;
     
 }
-@media screen and (max-width: 375px) {
-    #mainContainer{
+#mainContainer{
+    margin: 90px;
+    width: 30%;
+    background-color: hsl(0, 0%, 12%);
+    display:flex;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3em 0;
     
-        margin: 30px;
-        background-color: hsl(0, 0%, 12%);
-        display:flex;
-        border-radius: 20px;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        padding-top: 50px;
-        padding-right: 20px;
-        padding-left: 20px;
-        padding-bottom: 30px;
-    }
-}
-@media screen and (min-width: 375px) {
-    #mainContainer{
-    
-        margin: 90px;
-        background-color: hsl(0, 0%, 12%);
-        display:flex;
-        border-radius: 20px;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        padding-top: 50px;
-        padding-right: 20px;
-        padding-left: 20px;
-        padding-bottom: 30px;
-    }
 }
 
 #image{
@@ -65,21 +45,46 @@ h2{
     color: white;
 }
 #buttons{
-    
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    width: 90%;
 }
-button{
+.buttons__item{
+    text-align: center;
     margin-bottom: 10px;
-    padding: 15px 50px;
+    padding: 1em;
     border: none;
     border-radius: 10px;
-    width: 250px;
+    
+    
     color: white;
     background-color: hsl(0, 0%, 20%)
+}
+.buttons__item:hover{
+    background-color: hsl(0, 0%, 40%);
+    color: white;
 }
 .attribution, a{
     font-size: 15px;
     text-decoration: none;
     color:white;
+}
+.attribution a:hover{
+    color: hsl(0, 0%, 60%);
+}
+@media screen and (max-width: 1024px) {
+    body{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    #mainContainer{
+        margin: 0;
+        width: 100vw;
+        height: auto;
+    }
+    section{
+        padding-bottom: 1em;
+    }
 }
