@@ -1,56 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 body{
     background-color: hsl(0, 0%, 8%);
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    
+    font-family: "Inter";
+    font-size:1em;
 }
-#mainContainer{
-    margin: 90px;
-    width: 30%;
+main{
+    display: flex;
+    justify-content: space-around;
+}
+.container{
+    margin: 10em 0;
+    width: 35%;
     background-color: hsl(0, 0%, 12%);
     display:flex;
     border-radius: 20px;
+    align-self: center;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
     padding: 3em 0;
     
 }
 
-#image{
-    
+.image{
     border-radius: 50%;
     width: 100px;
 }
-h1{
-    font-size: 20px;
-    margin-top: 10;
+.nome{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.5em 0 0.5em 0 ;
 }
-h3{
-    font-size: 10px;
-    margin-bottom: 15;
-}
-h1,h3{
-    color: white;
-    
-}
-h2{
-    font-size: 10px;
+.endereco{
+    text-align: center;
+    font-size:0.7rem;
+    font-weight: 600;
     color: hsl(75, 94%, 57%);
     margin: 0;
 }
+.bio{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1.5em 0 1em 0;
+    padding: 1rem
+}
+.nome,.bio{
+    color: white;
+    
+}
+
 .attribution{
     text-align: center;
     color: white;
 }
-#buttons{
+.botoes{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     width: 90%;
 }
-.buttons__item{
+.botoes__item{
     text-align: center;
     margin-bottom: 10px;
     padding: 1em;
@@ -61,30 +71,27 @@ h2{
     color: white;
     background-color: hsl(0, 0%, 20%)
 }
-.buttons__item:hover{
+.botoes__item:hover{
     background-color: hsl(0, 0%, 40%);
     color: white;
 }
-.attribution, a{
-    font-size: 15px;
+a{
     text-decoration: none;
-    color:white;
 }
-.attribution a:hover{
-    color: hsl(0, 0%, 60%);
-}
-@media screen and (max-width: 1000px) {
+
+@media screen and (max-width: 800px) {
     body{
         display: block;
-        margin: 0;
+        margin: 1em;
         padding: 0;
     }
-    #mainContainer{
+    .container{
         margin: 0;
-        width: 100vw;
+        width: 90%;
         height: auto;
     }
-    section{
+    .mainContainer{
         padding-bottom: 1em;
     }
 }
+
